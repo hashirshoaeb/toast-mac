@@ -1,10 +1,23 @@
-# toast-mac
-config files to ease my hustle of setting up and switching to new mac
+<!-- PROJECT LOGO -->
+<br />
+<p align="center">
+  <h1 align="center">Toast Mac (my dotfile manager)✨</h1>
+  <p align="center">
+    My personal sh script to automate and ease my hustle of setting up or switching to new mac. No more panic attacks on mac crash. ✌️
+    <br />
+    <br />
+    <a href="https://hashirshoaeb.com">About Me</a>
+  </p>
+</p>
+
+
+[![Twitter Follow](https://img.shields.io/twitter/follow/hashirshoaeb?color=ffcc66&logo=twitter&logoColor=ffffff&style=for-the-badge)](https://twitter.com/hashirshoaeb)
+[![GitHub license](https://img.shields.io/github/license/hashirshoaeb/toast-mac?style=for-the-badge)](https://github.com/hashirshoaeb/toast-mac/blob/master/LICENSE)
 
 
 ## Install
 Open terminal and run the following commands:
-<!-- https://stackoverflow.com/questions/17581379/git-clone-without-project-folder -->
+
 ```bash
 cd ~
 git clone https://github.com/hashirshoaeb/toast-mac.git --depth=1
@@ -12,5 +25,15 @@ cd toast-mac
 chmod +x install.sh
 ./install.sh
 cd ..
-rm -rf toast-mac
 ```
+**Warning:** If you want to give these dotfiles a try, you should first fork this repository, review the code, and remove things you don’t want or need. Don’t blindly use my settings unless you know what that entails. Use at your own risk! I have shared mine just for the sake of inspiration only.
+
+## Goal
+To quickly setup my development environemnt on fresh macOS. What to automate basically?
+- my macos's default settings. (settings that are not part of icloud)
+- setup terminal with oh my zsh and my favourite color
+- setup my dotfiles (i.e. .gitconfig)
+- install my work tools (i.e. Xcode, vscode) 
+
+## Thanks to...
+I first got the idea of dotfiles from [Ruben](https://github.com/rubenvereecken/dotfiles). After some google search I stumbled upon [dotfiles](https://dotfiles.github.io/), there I found various dotfile implementaions. And I just copied the scripts I needed for my personal use. For instance: I learned to setup mac defaults from [Mathias Bynens](https://github.com/mathiasbynens)'s [.macOS](https://github.com/mathiasbynens/dotfiles/blob/master/.macos). The idea of symbolic links from [Lars Kappert](https://github.com/webpro)'s [blog](https://www.webpro.nl/articles/getting-started-with-dotfiles) . Scripting OH-MY-ZSH from [Dries Vints](https://github.com/driesvints)'s [dotfile](https://github.com/driesvints/dotfiles/blob/main/fresh.sh)
