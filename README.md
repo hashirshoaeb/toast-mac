@@ -1,9 +1,9 @@
 <!-- PROJECT LOGO -->
 <br />
 <p align="center">
-  <h1 align="center">Toast Mac (my dotfile manager)✨</h1>
+  <h1 align="center">Toast Mac 🥪</h1>
   <p align="center">
-    My personal sh script to automate and ease my hustle of setting up or switching to new mac. No more panic attacks on mac crash. ✌️
+    My dotfile manager (personal sh script) to automate and ease my hustle of setting up or switching to new mac. No more panic attacks on mac crash. ✌️
     <br />
     <br />
     <a href="https://hashirshoaeb.com">About Me</a>
@@ -36,4 +36,4 @@ To quickly setup my development environemnt on fresh macOS. What to automate bas
 - install my work tools (i.e. Xcode, vscode) 
 
 ## Thanks to...
-I first got the idea of dotfiles from [Ruben](https://github.com/rubenvereecken/dotfiles). After some google search I stumbled upon [dotfiles](https://dotfiles.github.io/), there I found various dotfile implementaions. And I just copied the scripts I needed for my personal use. For instance: I learned to setup mac defaults from [Mathias Bynens](https://github.com/mathiasbynens)'s [.macOS](https://github.com/mathiasbynens/dotfiles/blob/master/.macos). The idea of symbolic links from [Lars Kappert](https://github.com/webpro)'s [blog](https://www.webpro.nl/articles/getting-started-with-dotfiles) . Scripting OH-MY-ZSH from [Dries Vints](https://github.com/driesvints)'s [dotfile](https://github.com/driesvints/dotfiles/blob/main/fresh.sh)
+I first got the idea of dotfiles from [Ruben](https://github.com/rubenvereecken/dotfiles). After some google search I stumbled upon [dotfiles](https://dotfiles.github.io/), there I found various dotfile implementaions. And I just copied the scripts I needed for my personal use. For instance: I learned to setup mac defaults from [Mathias Bynens](https://github.com/mathiasbynens)'s [.macOS](https://github.com/mathiasbynens/dotfiles/blob/master/.macos). The idea of symbolic links from [Lars Kappert](https://github.com/webpro)'s [blog](https://www.webpro.nl/articles/getting-started-with-dotfiles) . Scripting OH-MY-ZSH from [Dries Vints](https://github.com/driesvints)'s [dotfile](https://github.com/driesvints/dotfiles/blob/main/fresh.sh). Lastly thanks to Dries Vints's [blog](https://driesvints.com/blog/getting-started-with-dotfiles/) and Anish Athalye's [blog](https://www.anishathalye.com/2014/08/03/managing-your-dotfiles/) for convincing me that this effort will worth saving time in future. 
