@@ -122,3 +122,8 @@ export FLUTTER_ROOT="$HOME/flutter"
 
 #  global dart packages
 export PATH="$PATH":"$HOME/.pub-cache/bin"
+
+
+# Alias
+alias g='git'
+alias ga='g add .'
