@@ -133,6 +133,7 @@ alias gc='git checkout '
 alias gcn='gc -b '
 alias gss='g stash save '
 alias gsp='g stash pop'
+alias gp='g push'
 # # iOS
 alias pi='pod install'
 # # Flutter
