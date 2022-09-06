@@ -127,3 +127,8 @@ export PATH="$PATH":"$HOME/.pub-cache/bin"
 # Alias
 alias g='git'
 alias ga='g add .'
+alias gm='g commit -m '
+alias gc='git checkout '
+alias gcn='gc -b '
+alias gss='g stash save '
+alias gsp='g stash pop'
