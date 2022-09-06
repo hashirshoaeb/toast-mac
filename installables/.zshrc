@@ -125,6 +125,7 @@ export PATH="$PATH":"$HOME/.pub-cache/bin"
 
 
 # Alias
+# # git
 alias g='git'
 alias ga='g add .'
 alias gm='g commit -m '
@@ -132,3 +133,9 @@ alias gc='git checkout '
 alias gcn='gc -b '
 alias gss='g stash save '
 alias gsp='g stash pop'
+# # iOS
+alias pi='pod install'
+# # Flutter
+alias pb='flutter pub get'
+alias d='flutter doctor -v'
+alias br='flutter packages pub run build_runner build --delete-conflicting-outputs'
