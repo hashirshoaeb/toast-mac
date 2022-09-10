@@ -36,15 +36,6 @@ if test ! $(which omz); then
     echo "OMZ is installed"
 fi
 
-echo "Check for Homebrew and install if we don't have it"
-which -s brew
-if [[ $? != 0 ]] ; then
-    # Install Homebrew
-    /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
-else
-    brew update
-fi
-
 # `ln` creates symbolic links. 
 # https://man7.org/linux/man-pages/man1/ln.1.html
 # Symlinks tend to like full paths
@@ -54,9 +45,19 @@ fi
 
 echo "Installing your personal config dotfiles"
 
-ln -sfv ~/toast-mac/installables/.gitconfig ~
-ln -sfv ~/toast-mac/installables/.gitignore_global ~
-ln -sfv ~/toast-mac/installables/.zshrc ~
+ln -sfv ~/toast-mac/dotfiles/.gitconfig ~
+ln -sfv ~/toast-mac/dotfiles/.gitignore_global ~
+ln -sfv ~/toast-mac/dotfiles/.zshrc ~
+
+
+echo "Check for Homebrew and install if we don't have it"
+which -s brew
+if [[ $? != 0 ]] ; then
+    # Install Homebrew
+    /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+else
+    brew update
+fi
 
 # todo
 # install node, flutter vscode, xcode, xcode commandline tools, android studio 
