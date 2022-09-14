@@ -59,6 +59,9 @@ else
     brew update
 fi
 
+# brews 
+brew install gh
+
 # todo
 # install node, flutter vscode, xcode, xcode commandline tools, android studio 
 # arc browser 
