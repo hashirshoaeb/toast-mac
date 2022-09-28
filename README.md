@@ -42,7 +42,7 @@ What to automate basically? To be able to quickly setup my development environme
 - [ ] Install my work tools (i.e. Xcode, vscode) 
 
 ## Setup
-I have written a setp by step guide [here](https://hashirshoaeb.hashnode.dev/dotfiles-what-is-a-dotfile-why-do-we-need-dotfile-and-how-to-create-it-in-mac) 
+I have written a [setp by step guide](https://hashirshoaeb.hashnode.dev/dotfiles-what-is-a-dotfile-why-do-we-need-dotfile-and-how-to-create-it-in-mac) on how to backup and sync dotfiles. [[link]](https://hashirshoaeb.hashnode.dev/dotfiles-what-is-a-dotfile-why-do-we-need-dotfile-and-how-to-create-it-in-mac)
 
 ## Thanks to...
 I first got the idea of dotfiles from [Ruben](https://github.com/rubenvereecken/dotfiles). After some google search I stumbled upon [dotfiles](https://dotfiles.github.io/), there I found various dotfile implementations. And I just copied the scripts I needed for my personal use. For instance: I learned to setup mac defaults from [Mathias Bynens](https://github.com/mathiasbynens)'s [.macOS](https://github.com/mathiasbynens/dotfiles/blob/master/.macos). The idea of symbolic links from [Lars Kappert](https://github.com/webpro)'s [blog](https://www.webpro.nl/articles/getting-started-with-dotfiles) . Scripting OH-MY-ZSH from [Dries Vints](https://github.com/driesvints)'s [dotfile](https://github.com/driesvints/dotfiles/blob/main/fresh.sh). Lastly thanks to Dries Vints's [blog](https://driesvints.com/blog/getting-started-with-dotfiles/) and Anish Athalye's [blog](https://www.anishathalye.com/2014/08/03/managing-your-dotfiles/) for convincing me that this effort will be worth saving time in future. 
