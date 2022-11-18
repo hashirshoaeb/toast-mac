@@ -23,6 +23,8 @@ brew install gh
 brew install --cask visual-studio-code
 # android studio
 brew install --cask android-studio
+# google chrome
+brew install --cask google-chrome
 
 
 # todo
