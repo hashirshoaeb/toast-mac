@@ -26,7 +26,8 @@ open ~/toast-mac/hsterm.terminal
 defaults write com.apple.terminal "Startup Window Settings" -string "hsterm" 
 defaults write com.apple.terminal "Default Window Settings" -string "hsterm" 
 # Disable the sound effects on boot
-# sudo nvram SystemAudioVolume=" "  
+# sudo nvram SystemAudioVolume=" " 
+# set default browser 
 echo "mac defaults updated."
 
 # `ln` creates symbolic links. 

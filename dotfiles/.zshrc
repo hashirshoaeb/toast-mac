@@ -123,6 +123,25 @@ export FLUTTER_ROOT="$HOME/flutter"
 #  global dart packages
 export PATH="$PATH":"$HOME/.pub-cache/bin"
 
+if [[ $(arch) == 'arm64' ]]; then
+# Set PATH, MANPATH, etc., for Homebrew. m1 chip
+# reason https://earthly.dev/blog/homebrew-on-m1/
+eval "$(/opt/homebrew/bin/brew shellenv)"
+fi
+
+# https://mac.install.guide/ruby/13.html
+
+# intel
+if [ -d "/usr/local/opt/ruby/bin" ]; then
+  export PATH=/usr/local/opt/ruby/bin:$PATH
+  export PATH=`gem environment gemdir`/bin:$PATH
+fi
+# M1
+if [ -d "/opt/homebrew/opt/ruby/bin" ]; then
+  export PATH=/opt/homebrew/opt/ruby/bin:$PATH
+  export PATH=`gem environment gemdir`/bin:$PATH
+fi
+
 
 # Alias
 # # git
@@ -144,17 +163,3 @@ alias d='f doctor -v'
 alias br='f packages pub run build_runner build --delete-conflicting-outputs'
 alias apk='f build apk'
 # flutter clean && rm ios/Podfile.lock pubspec.lock && rm -rf ios/Pods ios/Runner.xcworkspace
-
-
-# https://mac.install.guide/ruby/13.html
-
-# intel
-if [ -d "/usr/local/opt/ruby/bin" ]; then
-  export PATH=/usr/local/opt/ruby/bin:$PATH
-  export PATH=`gem environment gemdir`/bin:$PATH
-fi
-# M1
-if [ -d "/opt/homebrew/opt/ruby/bin" ]; then
-  export PATH=/opt/homebrew/opt/ruby/bin:$PATH
-  export PATH=`gem environment gemdir`/bin:$PATH
-fi
