@@ -143,6 +143,7 @@ alias pg='f pub get'
 alias d='f doctor -v'
 alias br='f packages pub run build_runner build --delete-conflicting-outputs'
 alias apk='f build apk'
+# flutter clean && rm ios/Podfile.lock pubspec.lock && rm -rf ios/Pods ios/Runner.xcworkspace
 
 
 # https://mac.install.guide/ruby/13.html
