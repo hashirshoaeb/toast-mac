@@ -11,3 +11,5 @@
 	autocrlf = input
 	filemode = false
 	excludesfile = ~/.gitignore_global
+[pull]
+	rebase = false

@@ -148,6 +148,7 @@ fi
 alias g='git'
 alias ga='g add .'
 alias gm='g commit -m '
+alias gam='ga && gm'
 alias gc='g checkout '
 alias gcn='gc -b '
 alias gss='g stash save '
