@@ -103,17 +103,20 @@ source $ZSH/oh-my-zsh.sh
 # Add Visual Studio Code (code)
 export PATH="/Applications/Visual Studio Code.app/Contents/Resources/app/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Library/Apple/usr/bin"
 
+# fvm
+FVM_HOME=$HOME/fvm
+
 # Add Flutter
 export PATH="$PATH:$HOME/flutter/bin"
-# export PATH="$PATH:$HOME/fvm/versions/2.5.1/bin"
+# export PATH="$PATH:$HOME/fvm/3.3.4/bin"
 
 # Flutter global packages
 export PATH="$PATH:$HOME/flutter/.pub-cache/bin"
-# export PATH="$PATH:$HOME/fvm/versions/2.5.1/.pub-cache/bin"
+# export PATH="$PATH:$HOME/fvm/3.3.4/.pub-cache/bin"
 
 # Xcode Flutter
 export FLUTTER_ROOT="$HOME/flutter"
-# export FLUTTER_ROOT="/Users/hashirshoaeb/fvm/versions/2.5.1"
+# export FLUTTER_ROOT="$HOME/fvm/3.3.4"
 
 
 # Gem 
@@ -160,8 +163,22 @@ alias pi='pod install'
 # # Flutter
 alias f='flutter'
 alias fpg='f pub get'
+alias fpu='f pub upgrade'
+alias fv='f --version'
 alias fd='f doctor -v'
 alias fc='f clean'
 alias fbr='f packages pub run build_runner build --delete-conflicting-outputs'
 alias apk='f build apk'
 # flutter clean && rm ios/Podfile.lock pubspec.lock && rm -rf ios/Pods ios/Runner.xcworkspace
+
+
+# Add this in terminal in case pod not installed
+LANG="en_US.UTF-8"
+LC_COLLATE="en_US.UTF-8"
+LC_CTYPE="en_US.UTF-8"
+LC_MESSAGES="en_US.UTF-8"
+LC_MONETARY="en_US.UTF-8"
+LC_NUMERIC="en_US.UTF-8"
+LC_TIME="en_US.UTF-8"
+
+# https://stackoverflow.com/questions/59405671/ios-cocoapods-requires-your-terminal-to-be-using-utf-8-encoding-after-latest
