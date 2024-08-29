@@ -42,3 +42,4 @@ echo "Installing your personal config dotfiles"
 ln -sfv ~/toast-mac/dotfiles/.gitconfig ~
 ln -sfv ~/toast-mac/dotfiles/.gitignore_global ~
 ln -sfv ~/toast-mac/dotfiles/.zshrc ~
+ln -sfv ~/toast-mac/RectangleConfig.json ~/Library/Application Support/Rectangle/RectangleConfig.json
