@@ -25,6 +25,8 @@ brew install --cask visual-studio-code
 brew install --cask android-studio
 # google chrome
 brew install --cask google-chrome
+# install rectangle app
+brew install --cask rectangle
 
 
 # todo
