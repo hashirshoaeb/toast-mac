@@ -28,6 +28,9 @@ brew install --cask google-chrome
 # install rectangle app
 brew install --cask rectangle
 
+# https://mac.install.guide/ruby/13
+brew install ruby
+
 
 # todo
 # install node, flutter vscode, xcode, xcode commandline tools, android studio 
@@ -47,6 +50,7 @@ which flutter
 sudo xcode-select --switch /Applications/Xcode.app/Contents/Developer
 sudo xcodebuild -runFirstLaunch
 sudo xcodebuild -license
+
 
 
 
