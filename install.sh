@@ -31,6 +31,8 @@ brew install --cask rectangle
 # https://mac.install.guide/ruby/13
 brew install ruby
 
+brew install --cask cocoapods
+
 
 # todo
 # install node, flutter vscode, xcode, xcode commandline tools, android studio 
