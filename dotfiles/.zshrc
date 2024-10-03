@@ -160,6 +160,7 @@ alias gp='g push'
 alias gpl='g pull'
 # # iOS
 alias pi='pod install'
+alias pu='pod update'
 # # Flutter
 alias f='flutter'
 alias fpg='f pub get'
