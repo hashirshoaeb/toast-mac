@@ -171,7 +171,36 @@ alias fc='f clean'
 alias fbr='f packages pub run build_runner build --delete-conflicting-outputs'
 alias apk='f build apk'
 # flutter clean && rm ios/Podfile.lock pubspec.lock && rm -rf ios/Pods ios/Runner.xcworkspace
+# Git Tagging Function
+gt() {
+    if [ -z "$1" ]; then
+        echo "Usage: gt <version>"
+        return 1
+    fi
 
+    VERSION=$1
+    TAG="v$VERSION"
+
+    # Create the tag
+    git tag -a "$TAG" -m "Release $TAG"
+
+    # Confirmation message
+    echo "Git tag $TAG is successfully created. Do you want to push it? (y/n)"
+    read -r RESPONSE
+
+    if [ "$RESPONSE" = "y" ]; then
+        # Push the tag
+        git push origin "$TAG"
+        echo "Tag $TAG has been pushed successfully."
+    elif [ "$RESPONSE" = "n" ]; then
+        # Delete the tag locally
+        git tag -d "$TAG"
+        echo "Tag $TAG has been rolled back."
+    else
+        echo "Invalid response. No action taken."
+        return 1
+    fi
+}
 
 # Add this in terminal in case pod not installed
 LANG="en_US.UTF-8"
