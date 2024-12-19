@@ -16,8 +16,8 @@ echo "- Finder: show hidden files by default"
 defaults write com.apple.finder AppleShowAllFiles -bool true
 echo "- Dock: move dock to the left side of screen"
 defaults write com.apple.dock orientation left
-echo "- Screencapture: Save screenshots to the desktop"
-defaults write com.apple.screencapture location -string "$HOME/Desktop"
+echo "- Screencapture: Save screenshots to the Downloads"
+defaults write com.apple.screencapture location -string "$HOME/Downloads"
 echo "- Screencapture: Save screenshots in PNG format"
 defaults write com.apple.screencapture type -string "png"
 echo "- Terminal: setup terminal flavour"
