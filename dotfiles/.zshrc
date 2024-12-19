@@ -158,6 +158,8 @@ alias gss='g stash save '
 alias gsp='g stash pop'
 alias gp='g push'
 alias gpl='g pull'
+alias grs='g reset --soft HEAD~1'
+
 # # iOS
 alias pi='pod install'
 alias pu='pod update'
