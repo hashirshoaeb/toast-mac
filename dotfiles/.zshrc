@@ -164,7 +164,7 @@ alias grs='g reset --soft HEAD~1'
 alias pi='pod install'
 alias pu='pod update'
 # # Flutter
-alias f='flutter'
+alias f='fvm flutter'
 alias fpg='f pub get'
 alias fpu='f pub upgrade'
 alias fv='f --version'
@@ -214,3 +214,13 @@ LC_NUMERIC="en_US.UTF-8"
 LC_TIME="en_US.UTF-8"
 
 # https://stackoverflow.com/questions/59405671/ios-cocoapods-requires-your-terminal-to-be-using-utf-8-encoding-after-latest
+
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+
+## [Completion]
+## Completion scripts setup. Remove the following line to uninstall
+[[ -f /Users/hashirshoaeb/.dart-cli-completion/zsh-config.zsh ]] && . /Users/hashirshoaeb/.dart-cli-completion/zsh-config.zsh || true
+## [/Completion]
+
