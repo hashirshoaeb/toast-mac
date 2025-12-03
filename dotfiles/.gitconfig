@@ -7,7 +7,7 @@
 	name = hashirshoaeb
 	email = hashirshoaeb@gmail.com
 [core]
-	editor = code --wait
+	editor = cursor --wait
 	autocrlf = input
 	filemode = false
 	excludesfile = ~/.gitignore_global
