@@ -3,7 +3,6 @@
 
 # Path to your oh-my-zsh installation.
 export ZSH="$HOME/.oh-my-zsh"
-
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
 # to know which specific one was loaded, run: echo $RANDOM_THEME
@@ -104,19 +103,21 @@ source $ZSH/oh-my-zsh.sh
 export PATH="/Applications/Visual Studio Code.app/Contents/Resources/app/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Library/Apple/usr/bin"
 
 # fvm
-FVM_HOME=$HOME/fvm
+# FVM_HOME=$HOME/fvm
+# export PATH="$HOME/.fvm_flutter/bin:$PATH"
 
+#  use fvm global command to set the default version
 # Add Flutter
-export PATH="$PATH:$HOME/flutter/bin"
-# export PATH="$PATH:$HOME/fvm/3.3.4/bin"
+# export PATH="$PATH:$HOME/flutter/bin"
+export PATH="$PATH:$HOME/fvm/default/bin"
 
 # Flutter global packages
-export PATH="$PATH:$HOME/flutter/.pub-cache/bin"
-# export PATH="$PATH:$HOME/fvm/3.3.4/.pub-cache/bin"
+# export PATH="$PATH:$HOME/flutter/.pub-cache/bin"
+export PATH="$PATH:$HOME/fvm/default/.pub-cache/bin"
 
 # Xcode Flutter
-export FLUTTER_ROOT="$HOME/flutter"
-# export FLUTTER_ROOT="$HOME/fvm/3.3.4"
+# export FLUTTER_ROOT="$HOME/flutter"
+export FLUTTER_ROOT="$HOME/fvm/default"
 
 
 # Gem 
@@ -144,6 +145,12 @@ if [ -d "/opt/homebrew/opt/ruby/bin" ]; then
   export PATH=/opt/homebrew/opt/ruby/bin:$PATH
   export PATH=`gem environment gemdir`/bin:$PATH
 fi
+
+
+export JAVA_HOME="/Applications/Android Studio.app/Contents/jbr/Contents/Home"
+export PATH=$PATH:/Users/hashirshoaeb/Library/Android/sdk/platform-tools
+export PATH="$JAVA_HOME/bin:$PATH"
+export PATH="$PATH":"$HOME/.pub-cache/bin"
 
 
 # Alias
